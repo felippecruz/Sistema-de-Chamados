@@ -1,5 +1,5 @@
 <?php 
-require_once ('conecta.php');
+require_once 'conecta.php';
 
 //CRIAR TABELA SQL
 $sql = "CREATE TABLE IF NOT EXISTS `logintela` 

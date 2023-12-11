@@ -1,12 +1,15 @@
 <?php 
-$servername = "127.0.0.1";
+$host = "127.0.0.1";
 $username = "root";
-$password = "";
+$password = "Vialog@2020";
 $dbname = "ticketsystem";
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+@$con = mysqli_connect($host, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-    }
+if(mysqli_connect_error()) {
+    echo "<p>ERRO: (" . mysqli_connect_errno($con) . ") " . mysqli_connect_error($con) . "</p>";
+    exit;
+} else {
+    // echo "<p>Conexão realizada com sucesso!</p>";
+}
 ?>
