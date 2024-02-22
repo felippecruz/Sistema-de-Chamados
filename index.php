@@ -1,7 +1,7 @@
-<?php
+<!---?php
 session_start();
 require_once 'conecta.php';
-?>
+?--->
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -163,8 +163,8 @@ require_once 'conecta.php';
 
     <main class="form-signin w-100 m-auto">
         <form action="envia.php" method="post">
-            <img class="mb-4" src="assets/imagens/logo-removebg-preview.png" alt="" width="100" height="57">
-            <h1 class="h3 mb-3 fw-normal">Faça Login</h1>
+            <img class="rounded mx-auto d-block mb-4" src="assets/imagens/5124556.jpg" alt="" width="100" height="70">
+            <h1 class="h3 mb-3 fw-normal">Bem Vindo (a)</h1>
 
             <div class="form-floating">
                 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
@@ -175,14 +175,14 @@ require_once 'conecta.php';
                 <label for="floatingPassword">Insira sua senha</label>
             </div>
 
-            <div class="form-check text-start my-3">
+            <!---div class="form-check text-start my-3">
                 <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     Lembar-me
                 </label>
-            </div>
+            </div--->
             <button class="btn btn-primary w-100 py-2" type="submit"><i class="bi bi-send"></i> Entrar</button>
-            <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2023</p>
+            <!---p class="mt-5 mb-3 text-body-secondary"---&copy; 2017–2023</p--->
         </form>
     </main>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
